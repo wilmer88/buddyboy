@@ -2,7 +2,7 @@ package com.whoWins;
 
 import java.util.Scanner;
 
-public class PreguantaParaEsquinaRoja {
+public class BlueQuestions {
     Scanner scanner = new Scanner(System.in);
     public  Integer askRedOdds(){
         //Asks for red corner fight odds and returns the answer
@@ -22,9 +22,8 @@ public class PreguantaParaEsquinaRoja {
     public  Integer askRedLosses(){
         //Asks for red corner loss record and returns the answer
         System.out.println("cuantas peleas a perdido la esquina roja/ desiafiador: ");
-        String redSideLosses = scanner.nextLine();
-        Integer lossesForRedSide = Integer.parseInt(redSideLosses);
-        return lossesForRedSide;
+        String redSideWins = scanner.nextLine();
+        Integer winsForRedSide = Integer.parseInt(redSideWins);
+        return winsForRedSide;
     }
-
 }
