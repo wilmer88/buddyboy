@@ -9,8 +9,7 @@ public class PromptClass {
 
       Scanner scanner = new Scanner(System.in);
       //Asks for red corner fight odds and saves response to an integer
-      System.out.println("what is red corner betting odds example -110 or +150");
-      System.in()
+      System.out.println("qual es la probialidades esquina roja/ probabilidades de lucha del desiafiador: ");
       String redSideOdds = scanner.nextLine();
       Integer pointsForRedSide = Integer.parseInt(redSideOdds);
 
@@ -22,10 +21,10 @@ public class PromptClass {
 
       //Calls for predictor class that will return prediction
       Predictor predictionCreator = new Predictor();
-//      String prediction = predictionCreator.predict(pointsForRedSide,blueSidePoints);
+      //String prediction = predictionCreator.predict(pointsForRedSide,blueSidePoints);
 
      // prints to the console the winner
-//      System.out.println(prediction);
+     // System.out.println(prediction);
 
 
       scanner.close();
