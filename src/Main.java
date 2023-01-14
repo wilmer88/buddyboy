@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         PromptClass askUser = new PromptClass();
-        askUser.promptUser();
-
-
-
+      String answer =  askUser.promptUser();
+      System.out.println(answer);
     }
 }
 //Scanner scanner = new Scanner(System.in);

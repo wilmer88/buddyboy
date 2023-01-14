@@ -6,14 +6,14 @@ public class PreguantaParaEsquinaRoja {
     Scanner scanner = new Scanner(System.in);
     public  Integer askRedOdds(){
         //Asks for red corner fight odds and returns the answer
-        System.out.println("qual es la probialidades esquina roja/ probabilidades de lucha del desiafiador: ");
+        System.out.println("qual es la probialidades de esquina roja?: ");
         String redSideOdds = scanner.nextLine();
         Integer oddsForRedSide = Integer.parseInt(redSideOdds);
         return oddsForRedSide;
     }
     public  Integer askRedWins(){
         //Asks for red corner win record and returns the answer
-        System.out.println("cuantas peleas a ganado la esquina roja/ desiafiador: ");
+        System.out.println("cuantas peleas a ganado la esquina roja?: ");
         String redSideWins = scanner.nextLine();
         Integer winsForRedSide = Integer.parseInt(redSideWins);
         return winsForRedSide;
@@ -21,7 +21,7 @@ public class PreguantaParaEsquinaRoja {
 
     public  Integer askRedLosses(){
         //Asks for red corner loss record and returns the answer
-        System.out.println("cuantas peleas a perdido la esquina roja/ desiafiador: ");
+        System.out.println("cuantas peleas a perdido la esquina roja?: ");
         String redSideLosses = scanner.nextLine();
         Integer lossesForRedSide = Integer.parseInt(redSideLosses);
         return lossesForRedSide;

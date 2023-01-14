@@ -1,8 +1,9 @@
 package com.whoWins.Red;
 
 public class RedWinLossCalculator {
-    Integer addRedPoints(Integer redSideWins, Integer redSideLoss){
-        Integer experiencePoints = redSideWins - redSideLoss;
+  public   Integer calculateRedWinLossPoints(Integer redSideWins, Integer redSideLoss){
+        Integer addedExperience = redSideWins + redSideLoss;
+        Integer experiencePoints = addedExperience - redSideLoss;
         if(experiencePoints > 49){
             Integer calculatedExperiencePoints = experiencePoints + 6;
             return calculatedExperiencePoints ;
