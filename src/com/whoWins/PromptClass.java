@@ -1,44 +1,28 @@
 package com.whoWins;
 
-import java.util.Scanner;
+import com.whoWins.Blue.BlueQuestions;
+import com.whoWins.Red.PreguantaParaEsquinaRoja;
 
 
 public class PromptClass {
 
   public void promptUser(){
 
-      //Scanner scanner = new Scanner(System.in);
-      //Asks for red corner fight odds and fight record then saves response
-      //System.out.println("qual es la probialidades esquina roja/ probabilidades de lucha del desiafiador: ");
-      //String redSideOdds = scanner.nextLine();
-      //System.out.println("pelas ganadas esquina roja/ record ganadas del desiafiador: ");
-      //String redSideWins = scanner.nextLine();
-      //System.out.println("pelas perdidas de esquina roja/ perdidas registradas del desiafiador: ");
-      //String redSideLoss = scanner.nextLine();
-      //Integer oddsForRedSide = Integer.parseInt(redSideOdds);
-      //Integer RedSideWins = Integer.parseInt(redSideWins);
-      //Integer RedSideLosses = Integer.parseInt(redSideLoss);
-      //get reds side points
-      //RedCorner pointsForRedCorner = new  RedCorner();
-     // pointsForRedCorner.addRedPoints(redSideOdds,redSideWins,redSideLoss)
+
+      // creates a new instance of questions to ask for red corner
+      //then saves the response to be used later
+        PreguantaParaEsquinaRoja preguantaParaEsquinaRoja = new PreguantaParaEsquinaRoja();
+      Integer answerForRedOdds =  preguantaParaEsquinaRoja.askRedOdds();
+      Integer answerForRedWins = preguantaParaEsquinaRoja.askRedWins();
+      Integer answerForRedLosses = preguantaParaEsquinaRoja.askRedLosses();
+      BlueQuestions preguantaParaEsquinaAzul = new BlueQuestions();
+      Integer answerForBlueOdds =  preguantaParaEsquinaAzul.blueOdds();
+      Integer answerForBlueWins = preguantaParaEsquinaAzul.askForBlueWins();
+      Integer answerForBlueLosses = preguantaParaEsquinaAzul.askBlueLosses();
 
 
-      //Asks for red corner fight odds and saves response to an integer
-      //System.out.println("what is blue corner odds ");
-      //String blueSideOdds = scanner.nextLine();
-      //Integer blueSidePoints = Integer.parseInt(blueSideOdds);
 
 
-      //Calls for predictor class that will return prediction
-      //Predictor predictionCreator = new Predictor();
-      //String prediction = predictionCreator.predict(pointsForRedSide,blueSidePoints);
-
-     // prints to the console the winner
-     // System.out.println(prediction);
-
-
-      //scanner.close();
-        return ;
 
     }
 
