@@ -14,6 +14,9 @@ public class OddsForRedCalculator {
         else if (oddsForRed <= -200) {
             return 2;
         }
-        return 1;
+        else if (oddsForRed < 0) {
+            return 1;
+        }
+       else return 1;
     }
 }

@@ -14,6 +14,10 @@ public class OddsForBlueCornerCalculator {
         else if (oddsForBlue <= -200) {
             return 2;
         }
-        return 1;
+        else if (oddsForBlue < 0) {
+            return 1;
+        }
+        else return 1;
+
     }
 }
