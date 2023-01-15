@@ -1,10 +1,9 @@
 package com.whoWins.Blue;
 
 public class BlueCornerWinLossCalculator {
-      public   Integer calculateBlueWinLossPoints(Integer redSideWins, Integer redSideLoss){
-
-            Integer addedXp = redSideWins + redSideLoss;
-            Integer xpPoints = addedXp - redSideLoss;
+      public   Integer calculateBlueWinLossPoints(Integer blueSideWins, Integer blueSideLoss){
+            Integer addedXp = blueSideWins + blueSideLoss;
+            Integer xpPoints = addedXp - blueSideLoss;
             Integer defaultReturn = xpPoints + 1;
             if(xpPoints > 49){
                 Integer calculatedExperiencePoints = xpPoints + 6;

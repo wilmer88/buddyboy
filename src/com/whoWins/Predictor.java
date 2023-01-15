@@ -5,10 +5,10 @@ public class Predictor {
                           Integer blueCornerOddsPoints, Integer blueCornerRecordPoints){
         Integer redTotalPoints = redCornerOddsPoints + redCornerRecordPoints;
         Integer blueTotalPoints = blueCornerOddsPoints + blueCornerRecordPoints;
-        if(redTotalPoints < blueTotalPoints){
+        if(redTotalPoints > blueTotalPoints){
             return "Red Corner wins.";
         }
-        else if(blueTotalPoints < redTotalPoints){
+        else if(blueTotalPoints > redTotalPoints){
             return "Blue Corner wins.";
         }
         else if(blueTotalPoints == redTotalPoints){
