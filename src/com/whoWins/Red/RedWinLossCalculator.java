@@ -3,7 +3,7 @@ package com.whoWins.Red;
 public class RedWinLossCalculator {
   public   Integer calculateRedWinLossPoints(Integer redSideWins, Integer redSideLoss){
         Integer redTotalExperience = redSideWins + redSideLoss;
-        Integer lossMentalityAcceptance;
+        Integer lossMentalityAcceptance = redSideLoss/2;
         Integer RedXp = redTotalExperience - redSideLoss;
         Integer defaultRedXp = RedXp + 1;
         if(RedXp > 49){
