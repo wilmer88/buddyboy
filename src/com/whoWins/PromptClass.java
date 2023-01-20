@@ -15,7 +15,7 @@ public class PromptClass {
 
       /** creates a new instance of questions to ask for Red corner
    then saves the response to be used later   */
-        PreguantaParaEsquinaRoja preguantaParaEsquinaRoja = new PreguantaParaEsquinaRoja();
+      PreguantaParaEsquinaRoja preguantaParaEsquinaRoja = new PreguantaParaEsquinaRoja();
       Integer answerForRedOdds =  preguantaParaEsquinaRoja.askRedOdds();
       Integer answerForRedWins = preguantaParaEsquinaRoja.askRedWins();
       Integer answerForRedLosses = preguantaParaEsquinaRoja.askRedLosses();
