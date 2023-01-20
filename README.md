@@ -7,7 +7,7 @@
 > Stable version release
  - [buddyboy v1.1](https://github.com/wilmer88/buddyboy/releases/tag/v1.1)
 ### To run this aplication on you local machine.  
-- click on (buddyboy v1.1) link that is under (Stable version release) above
+- click on ( buddyboy v1.1 ) link that is under ( Stable version release ) above
 - download (Source code zip file)
 - go to search file explorer then click downloads on your computer 
 - find buddyboy-1.1.zip and unzip folder
