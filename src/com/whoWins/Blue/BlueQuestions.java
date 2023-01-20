@@ -2,11 +2,22 @@ package com.whoWins.Blue;
 
 import java.util.Scanner;
 
+
 public class BlueQuestions {
     Scanner scanner = new Scanner(System.in);
+
+
+    public Object allBlueCornerPrompts(){
+
+
+       System.out.println("qual es la probialidades esquina azul/ probabilidades de lucha del desiafiador: ");
+        return 0;
+    }
+
+    //Asks for blue corner fight odds and returns the answer
     public  Integer blueOdds(){
-        //Asks for blue corner fight odds and returns the answer
         System.out.println("qual es la probialidades esquina azul/ probabilidades de lucha del desiafiador: ");
+
         String blueSideOdds = scanner.nextLine();
         Integer oddsForBlueSide = Integer.parseInt(blueSideOdds);
         return oddsForBlueSide;
