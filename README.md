@@ -6,7 +6,9 @@ Buddy boy is code name for fight predictor. Prompts user for both red corner and
  - [buddyboy v1.1](https://github.com/wilmer88/buddyboy/releases/tag/v1.1)
 ### To run this aplication on you local machine.  
 - click on buddyboy v1.1 link that is under Stable version release 
-- download zip file
+- download (Source code zip file)
+- open intelliJ
+- on the top click file
 - copy the src folder on to a new project 
 - run the main method in the root of src
 
