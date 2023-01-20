@@ -1,6 +1,8 @@
-# buddyboy
+ # buddyboy
+> What is it?
+> - Buddy boy is code name for fight predictor. Prompts user for both, red corner and blue corners: vegas odds, carrer wins and losses based on the data given calculates the winner of the fight.
 
-Buddy boy is code name for fight predictor. Prompts user for both, red corner and blue corners: vegas odds, carrer wins and losses based on the data given calculates the winner of the fight. 
+ 
 ---
 > Stable version release
  - [buddyboy v1.1](https://github.com/wilmer88/buddyboy/releases/tag/v1.1)
@@ -18,6 +20,7 @@ Buddy boy is code name for fight predictor. Prompts user for both, red corner an
 - then click Run Main.java
 - answer all prompts correctly with accurate information including the negative number symbols for the favorite.
 - if answered correctly the application will display the winner
+
 ---
 ## Documentation
 
