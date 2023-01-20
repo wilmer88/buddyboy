@@ -1,6 +1,6 @@
  # buddyboy
 > What is it?
-> - Buddy boy is code name for fight predictor. Prompts user for both, red corner and blue corners: vegas odds, carrier wins and losses based on the data given calculates the winner of the fight.
+> - Buddy boy is code name for fight predictor. Prompts user for both, red corner and blue corners: vegas odds, career wins and losses based on the data given calculates the winner of the fight.
 
  
 ---
