@@ -7,13 +7,19 @@ Buddy boy is code name for fight predictor. Prompts user for both red corner and
 ### To run this aplication on you local machine.  
 - click on buddyboy v1.1 link that is under Stable version release 
 - download (Source code zip file)
-- open intelliJ
-- on the top click file
-- copy the src folder on to a new project 
-- run the main method in the root of src
-
-
+- go to search file explorer then click downloads on your computer 
+- find buddyboy-1.1.zip and unzip folder
+- a new folder will be created called buddyboy-1.1 
+- inside buddyboy-1.1 will be a fightPredictor.iml 
+- right click fightPredictor.iml file and open with your IDE (mine is intelliJ)
+- inside buddyboy-1.1 folder will be src folder click on the src folder 
+- inside will be Main class click on Main 
+- at the top of your IDE (intllij) click Run
+- then click Run Main.java
+- answer all prompts correctly with accurate information including the negative number symbols for the favorite.
+- if answered correctly the application will display the winner
 ---
+## Documentation
 
  
 
