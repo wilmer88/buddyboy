@@ -1,10 +1,6 @@
 # buddyboy
-
-
 * `wilmer88.github.io/blast-porfolio`
 
+Buddy boy is code name for fight predictor. Prompts user for both red corner and blue corners: vegas odds, carrer wins and losses based on the data given calculates the winner of the fight.  
 
-
-### Buddy boy is code name for fight predictor. Prompts for user for certain data takes that data it calculates the winner of the fight.  
-
-### App run by calling the main method.  
+### To run app first clone repo and run the main method.  
