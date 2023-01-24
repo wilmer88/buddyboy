@@ -1,12 +1,21 @@
 import com.whoWins.PromptClass;
+import com.whoWins.Red.CornerAnswers;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        PromptClass askUser = new PromptClass();
-      String answer =  askUser.promptUser();
-      System.out.println(answer);
+//        PromptClass askUser = new PromptClass();
+//      String answer =  askUser.promptUser();
+//      System.out.println(answer);
+      CornerAnswers cornerAnswers = new CornerAnswers();
+     cornerAnswers.main();
+
+
+
+
+
+
     }
 }
 //Scanner scanner = new Scanner(System.in);
