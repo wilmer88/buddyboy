@@ -1,4 +1,4 @@
-package com.whoWins.prompt;
+package com.whoWins;
 
 public class UserPrompt {
     void promptUser(){

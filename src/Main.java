@@ -1,31 +1,20 @@
-import com.whoWins.PromptClass;
-import com.whoWins.Red.CornerAnswers;
 
-import java.util.Scanner;
+
+//import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
-//        PromptClass askUser = new PromptClass();
-//      String answer =  askUser.promptUser();
-//      System.out.println(answer);
-      CornerAnswers cornerAnswers = new CornerAnswers();
-     cornerAnswers.main();
 
+        PromptClass p = new PromptClass();
+        p.winner();
 
-
-
-
-
+//        CornerAnswers c = new CornerAnswers();
+//      String askedName =  c.name = c.askForName();
+//       double askedOdds = c.odds = c.askOdds(askedName);
     }
 }
-//Scanner scanner = new Scanner(System.in);
-//Asks for red corner fight odds and fight record then saves response
-//System.out.println("qual es la probialidades esquina roja/ probabilidades de lucha del desiafiador: ");
-//String redSideOdds = scanner.nextLine();
-//System.out.println("pelas ganadas esquina roja/ record ganadas del desiafiador: ");
-//String redSideWins = scanner.nextLine();
-//System.out.println("pelas perdidas de esquina roja/ perdidas registradas del desiafiador: ");
-//String redSideLoss = scanner.nextLine();
+
 //Integer oddsForRedSide = Integer.parseInt(redSideOdds);
 //Integer RedSideWins = Integer.parseInt(redSideWins);
 //Integer RedSideLosses = Integer.parseInt(redSideLoss);
