@@ -5,9 +5,11 @@
 
 public class Main {
     public static void main(String[] args) {
+        PromptClass promptClass = new PromptClass();
+        promptClass.startProject();
 
-        PromptClass p = new PromptClass();
-        p.winner();
+
+
 
 //        CornerAnswers c = new CornerAnswers();
 //      String askedName =  c.name = c.askForName();

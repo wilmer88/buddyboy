@@ -1,4 +1,4 @@
-package com.whoWins.Red;
+package com.whoWins;
 
 public class RedWinLossCalculator {
   public   Integer calculateRedWinLossPoints(Integer redSideWins, Integer redSideLoss){

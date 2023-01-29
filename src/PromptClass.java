@@ -2,20 +2,42 @@ import java.awt.*;
 import java.util.Arrays;
 
 public class PromptClass {
-CornerAnswers cornerAnswers = new CornerAnswers();
-Object [] arrOfAnswer = cornerAnswers.receivedAnswer();
- Object [] holdingArr = arrOfAnswer;
 
- OddsForRedCalculator od = new OddsForRedCalculator();
- Double oddCalculatorAnswer = od.oddsCalculator(holdingArr[]);
+    private String askQuestion(){
+        CornerAnswers cornerAnswers = new CornerAnswers();
+        String redName = cornerAnswers.askForName();
+        return redName;
+    }
+        String theFighterName = askQuestion();
 
 
+    private Integer oddsAnswer(){
+        CornerAnswers cornerAnswers = new CornerAnswers();
+       Integer  answerForOdds = cornerAnswers.askOdds(theFighterName);
+        return answerForOdds;
+    }
 
-public String winner (){
-    System.out.println(arrOfAnswer);
+    public Object[] startProject(){
+//        String theFighterName = askQuestion();
+        Integer  theFighterOdds = oddsAnswer();
+      return new Object[] {theFighterOdds };
 
-    return "winner";
-}
+    }
+
+
+//    class fighterBlue extends CornerAnswers{
+//
+//
+//    return
+//class fighterRed extends CornerAnswers {
+//
+//
+////    CornerAnswers cornerAnswers = new CornerAnswers() {
+////        String redName = as
+////    }
+//
+
+
 
 
 

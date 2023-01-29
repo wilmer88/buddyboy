@@ -1,49 +1,44 @@
-import java.awt.*;
-import java.util.Arrays;
+//import java.awt.*;
+//import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class CornerAnswers {
+//import static jdk.nashorn.internal.runtime.JSType.isString;
+
+class CornerAnswers {
 Scanner scanner = new Scanner(System.in);
 
+        public String askForName (){
+            System.out.println("enter a fighter name?: ");;
+
+            String nameOfFighter = scanner.nextLine();
 
 
+            while (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+" ) || nameOfFighter.matches(".*\\d+.*") ){
 
+               return askForName();
+            }
+            return nameOfFighter;
 
-
-
-        private String askForName (){
-
-                     System.out.println("enter a fighter name?: ");
-                     return scanner.nextLine();
-        }
-
-        private     Double askOdds(String fighterName){
-            System.out.println("what are " + fighterName + " odds?"  );
-            return scanner.nextDouble();
 
         }
 
-        String answerToName = askForName();
-
-        public  Object [] receivedAnswer() {
-            Object[] theData = new Object[2];
-            double answerToOdds = askOdds(answerToName);
-
-            String name = answerToName;
-            double odds = answerToOdds;
-            theData[0] = name;
-            theData[1] = odds;
+        def askOdds(String fighterName):
 
 
-            return  theData;
-        }
+            while True:
+            try:
+            fighterOdds = int(input("what are " + fighterName + " odds?"  ))
+                    return fighterOdds
+            except valueError:
+            print("what are " + fighterName + " odds?"  );
 
 
 
 
 
 
-//    private  Integer askRedWins(){
+//    private  Integer askForWins(){
 //        //Asks for red corner win record and returns the answer
 //        System.out.println("c?: ");
 //        String redSideWins = scanner.nextLine();
@@ -51,7 +46,7 @@ Scanner scanner = new Scanner(System.in);
 //        return winsForRedSide;
 //    }
 //
-//    public  Integer askRedLosses(){
+//    public  Integer askForLosses(){
 //        //Asks for red corner loss record and returns the answer
 //        System.out.println("?: ");
 //        String redSideLosses = scanner.nextLine();
@@ -59,8 +54,7 @@ Scanner scanner = new Scanner(System.in);
 //        return lossesForRedSide;
 //    }
 
-//    OddsForRedCalculator redOddsForRedCalculator = new OddsForRedCalculator();
-//    Integer answerForRedOdds = redOddsForRedCalculator.redOddsCalculator(askRedOdds());
+
 
 
 
