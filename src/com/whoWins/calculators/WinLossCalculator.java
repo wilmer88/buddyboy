@@ -1,6 +1,6 @@
-package com.whoWins;
+package com.whoWins.calculators;
 
-public class RedWinLossCalculator {
+public class WinLossCalculator {
   public   Integer calculateRedWinLossPoints(Integer redSideWins, Integer redSideLoss){
       ////checks to see if career record is an odd number if it is makes it even
       // by subtracting one the career loss record

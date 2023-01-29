@@ -1,4 +1,6 @@
-public class OddsForRedCalculator {
+package com.whoWins.calculators;
+
+public class OddsCalculator {
   public   Double oddsCalculator(Double oddsForRed){
         if(oddsForRed <= -1000){
             return 10.0;
