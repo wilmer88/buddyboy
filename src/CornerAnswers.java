@@ -3,35 +3,57 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-//import static jdk.nashorn.internal.runtime.JSType.isString;
+
+import static jdk.nashorn.internal.objects.Global.print;
+
 
 class CornerAnswers {
 Scanner scanner = new Scanner(System.in);
 
         public String askForName (){
-            System.out.println("enter a fighter name?: ");;
+            System.out.println("enter a fighter name?: ");
 
             String nameOfFighter = scanner.nextLine();
 
 
-            while (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+" ) || nameOfFighter.matches(".*\\d+.*") ){
+            if (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+" ) || nameOfFighter.matches(".*\\d+.*") ){
 
                return askForName();
             }
+
             return nameOfFighter;
+
 
 
         }
 
-        def askOdds(String fighterName):
+        public Integer askOdds(String fighterName){
+
+            while (true){
+                System.out.println("what are " + fighterName + " odds? ");
+
+                try {
+                    Integer fighter_odds = Integer.parseInt(scanner.nextLine());
+
+                    return fighter_odds;
+
+                }catch (NumberFormatException e){
+                    System.out.println("bad input ");
+
+                }
+                
+            }
+
+//
+//           if(scanner.hasNextInt()){
+//               return fighter_odds;
+//           }
+//           return askOdds(fighterName);
+
+        }
 
 
-            while True:
-            try:
-            fighterOdds = int(input("what are " + fighterName + " odds?"  ))
-                    return fighterOdds
-            except valueError:
-            print("what are " + fighterName + " odds?"  );
+
 
 
 

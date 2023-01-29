@@ -2,9 +2,10 @@ import java.awt.*;
 import java.util.Arrays;
 
 public class PromptClass {
+    CornerAnswers cornerAnswers = new CornerAnswers();
+
 
     private String askQuestion(){
-        CornerAnswers cornerAnswers = new CornerAnswers();
         String redName = cornerAnswers.askForName();
         return redName;
     }
@@ -12,7 +13,7 @@ public class PromptClass {
 
 
     private Integer oddsAnswer(){
-        CornerAnswers cornerAnswers = new CornerAnswers();
+
        Integer  answerForOdds = cornerAnswers.askOdds(theFighterName);
         return answerForOdds;
     }
