@@ -3,15 +3,15 @@
 //import java.util.Scanner;
 
 
+import com.whoWins.questionsAndAnswers.PromptAboutFighter;
+
 public class Main {
     public static void main(String[] args) {
-        PromptClass promptClass = new PromptClass();
-        promptClass.startProject();
+        FighterInfoHelper infoHelper = new FighterInfoHelper();
+        infoHelper.helperOne();
 
 
-
-
-//        CornerAnswers c = new CornerAnswers();
+//        com.whoWins.CornerAnswers c = new com.whoWins.CornerAnswers();
 //      String askedName =  c.name = c.askForName();
 //       double askedOdds = c.odds = c.askOdds(askedName);
     }

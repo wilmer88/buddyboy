@@ -1,7 +1,7 @@
 package com.whoWins.calculators;
 
 public class OddsCalculator {
-  public   Double oddsCalculator(Double oddsForRed){
+ public     Double oddsCalculator(Double oddsForRed){
         if(oddsForRed <= -1000){
             return 10.0;
         } else if (oddsForRed <= -800) {
@@ -18,5 +18,5 @@ public class OddsCalculator {
             return 1.0;
         }
        else return 1.0;
-    }
+  }
 }

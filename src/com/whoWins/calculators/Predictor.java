@@ -1,4 +1,4 @@
-package com.whoWins;
+package com.whoWins.calculators;
 
 public class Predictor {
     public String predict(Integer redCornerOddsPoints, Integer redCornerRecordPoints,

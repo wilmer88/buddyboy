@@ -1,5 +1,7 @@
+package com.whoWins.questionsAndAnswers;
+
 import java.util.Scanner;
-class CornerAnswers {
+class CornerQuestions {
 Scanner scanner = new Scanner(System.in);
         public String askForName (){
             System.out.println("enter a fighter name?: ");
@@ -13,6 +15,7 @@ Scanner scanner = new Scanner(System.in);
 
             return nameOfFighter;
         }
+
         public Integer askOdds(String fighterName){
 
             while (true){
@@ -30,4 +33,37 @@ Scanner scanner = new Scanner(System.in);
                 }
             }
         }
+
+   private void askWins( String fighterName) {
+
+        while (true) {
+            System.out.println("what are " + fighterName + " wins?");
+
+            try {
+                scanner.nextInt();
+
+            } catch (NumberFormatException e) {
+
+                System.out.println("bad input ");
+
+            }
+        }
+    }
+
+    private void askLosses( String fighterName){
+
+        while (true){
+
+            System.out.println("what are " + fighterName + " losses?");
+
+            try {
+                 scanner.nextInt();
+
+            }catch (NumberFormatException e){
+
+                System.out.println("bad input ");
+
+            }
+        }
+    }
 }
