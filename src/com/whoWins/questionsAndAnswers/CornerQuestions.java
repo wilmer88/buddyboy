@@ -2,68 +2,74 @@ package com.whoWins.questionsAndAnswers;
 
 import java.util.Scanner;
 class CornerQuestions {
-Scanner scanner = new Scanner(System.in);
-        public String askForName (){
-            System.out.println("enter a fighter name?: ");
 
-            String nameOfFighter = scanner.nextLine();
+        public interface questionsForUser{
+            Scanner scanner = new Scanner(System.in);
 
-            if (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+" ) || nameOfFighter.matches(".*\\d+.*") ){
+            private String askForName (){
+                System.out.println("enter a fighter name?: ");
 
-               return askForName();
+                String nameOfFighter = scanner.nextLine();
+
+                if (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+" ) || nameOfFighter.matches(".*\\d+.*") ){
+
+                    return askForName();
+                }
+
+                return nameOfFighter;
             }
 
-            return nameOfFighter;
-        }
+            private Integer askOdds(String fighterName){
 
-        public Integer askOdds(String fighterName){
+                while (true){
+                    System.out.println("what are " + fighterName + " odds? ");
 
-            while (true){
-                System.out.println("what are " + fighterName + " odds? ");
-
-                try {
+                    try {
 //                    Integer fighter_odds = Integer.parseInt(scanner.nextLine());
 
-                    return Integer.parseInt(scanner.nextLine());
+                        return Integer.parseInt(scanner.nextLine());
 
                     }catch (NumberFormatException e){
 
-                    System.out.println("bad input ");
+                        System.out.println("bad input ");
 
+                    }
                 }
             }
-        }
 
-   private void askWins( String fighterName) {
+            private void askWins( String fighterName) {
 
-        while (true) {
-            System.out.println("what are " + fighterName + " wins?");
+                while (true) {
+                    System.out.println("what are " + fighterName + " wins?");
 
-            try {
-                scanner.nextInt();
+                    try {
+                        scanner.nextInt();
 
-            } catch (NumberFormatException e) {
+                    } catch (NumberFormatException e) {
 
-                System.out.println("bad input ");
+                        System.out.println("bad input ");
 
+                    }
+                }
             }
-        }
-    }
 
-    private void askLosses( String fighterName){
+            private void askLosses( String fighterName){
 
-        while (true){
+                while (true){
 
-            System.out.println("what are " + fighterName + " losses?");
+                    System.out.println("what are " + fighterName + " losses?");
 
-            try {
-                 scanner.nextInt();
+                    try {
+                        scanner.nextInt();
 
-            }catch (NumberFormatException e){
+                    }catch (NumberFormatException e){
 
-                System.out.println("bad input ");
+                        System.out.println("bad input ");
 
+                    }
+                }
             }
+
         }
-    }
+
 }
