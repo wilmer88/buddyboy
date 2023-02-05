@@ -3,12 +3,26 @@
 //import com.whoWins.questionsAndAnswers.PromptAboutFighter;
 
 import com.whoWins.promotionInterface.FighterInterface;
+import com.whoWins.questionsAndAnswers.PromptAboutFighter;
 
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+//        PromptAboutFighter promptAboutFighter =  PromptAboutFighter();
+     String name;
+        name = PromptAboutFighter.askForName();
+        System.out.println(name);
+
+
+
+
+
+
+//        PromptAboutFighter cholo = new PromptAboutFighter();
+//      String fighterName = cholo.askName();
+//        System.out.println(fighterName);
 //        class MyClass implements FighterInterface {
 ////            Scanner scanner = new Scanner(System.in);
 //
@@ -17,24 +31,24 @@ public class Main {
 //            }
 //        }
 
-Scanner scanea = new Scanner(System.in);
-   System.out.println("what up blood");
-        String blood = scanea.nextLine();
-        System.out.println("no sea guey " +blood +" puto");
-        String response = scanea.nextLine().toLowerCase();
-
-        switch (response){
-            case "si":
-                System.out.println("ok puto");
-                break;
-            case "no":
-                System.out.println("enontess");
-             String esteEs=   scanea.nextLine();
-             System.out.println("no seas joto " + esteEs);
-            default:
-                System.out.println("Asi te llamas guey? " + response+" ?");
-
-        }
+//Scanner scanea = new Scanner(System.in);
+//   System.out.println("what up blood");
+//        String blood = scanea.nextLine();
+//        System.out.println("no sea guey " +blood +" puto");
+//        String response = scanea.nextLine().toLowerCase();
+//
+//        switch (response){
+//            case "si":
+//                System.out.println("ok puto");
+//                break;
+//            case "no":
+//                System.out.println("enontess");
+//             String esteEs=   scanea.nextLine();
+//             System.out.println("no seas joto " + esteEs);
+//            default:
+//                System.out.println("Asi te llamas guey? " + response+" ?");
+//
+//        }
 
 
 

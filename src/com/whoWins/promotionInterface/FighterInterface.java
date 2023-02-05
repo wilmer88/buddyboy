@@ -1,43 +1,46 @@
 package com.whoWins.promotionInterface;
-
 import java.util.Scanner;
-
 //public interface FighterInterface <T> {
 public interface FighterInterface {
-
-
             Scanner scanner = new Scanner(System.in);
-
-            private void askForName (){
+             static String askForName () {
+                String nameOfFighter;
                 System.out.println("enter a fighter name?: ");
+                nameOfFighter = scanner.nextLine();
 
-                String nameOfFighter = scanner.nextLine();
-                System.out.println(nameOfFighter);
-
-                if (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+" ) || nameOfFighter.matches(".*\\d+.*") ){
-
-                  System.out.println("valles verga");
+                if (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+") || nameOfFighter.matches(".*\\d+.*")) {
+//                   System.out.println("enter a fighter name?: ");
+                    return "wrong";
                 }
-
+                return nameOfFighter;
             }
 
-            private Integer askOdds(String fighterName){
+    static int askOdds(String fighterName) {
 
-                while (true){
-                    System.out.println("what are " + fighterName + " odds? ");
+        System.out.println("what are " + fighterName + " odds? ");
+        int odds = scanner.nextInt();
 
-                    try {
-//                    Integer fighter_odds = Integer.parseInt(scanner.nextLine());
 
-                        return Integer.parseInt(scanner.nextLine());
+        while (scanner.hasNextInt()) {
 
-                    }catch (NumberFormatException e){
+            System.out.println("what are " + fighterName + " odds? ");
 
-                        System.out.println("bad input ");
+            try {
+                Integer fighter_odds = Integer.parseInt(scanner.nextLine());
 
-                    }
-                }
+                return Integer.parseInt(scanner.nextLine());
+
+            } catch (NumberFormatException e) {
+
+                System.out.println("bad input ");
+
             }
+        }
+        return odds;
+    }
+}
+
+
 //
 //            private void askWins( String fighterName) {
 //
@@ -73,4 +76,3 @@ public interface FighterInterface {
 //            }
 
 
-}
