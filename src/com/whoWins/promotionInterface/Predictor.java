@@ -1,8 +1,8 @@
-package com.whoWins.calculators;
+package com.whoWins.promotionInterface;
 
-public class Predictor {
-    public String predict(Integer redCornerOddsPoints, Integer redCornerRecordPoints,
-                          Integer blueCornerOddsPoints, Integer blueCornerRecordPoints){
+public interface Predictor {
+    public default String predict(Integer redCornerOddsPoints, Integer redCornerRecordPoints,
+                                  Integer blueCornerOddsPoints, Integer blueCornerRecordPoints){
         Integer redTotalPoints = redCornerOddsPoints + redCornerRecordPoints;
         Integer blueTotalPoints = blueCornerOddsPoints + blueCornerRecordPoints;
         if(redTotalPoints > blueTotalPoints){

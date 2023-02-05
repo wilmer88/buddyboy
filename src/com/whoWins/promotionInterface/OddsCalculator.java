@@ -1,7 +1,7 @@
-package com.whoWins.calculators;
+package com.whoWins.promotionInterface;
 
-public class OddsCalculator {
- public     Double oddsCalculator(Double oddsForRed){
+public interface OddsCalculator {
+ public static Double oddsCalculator(Double oddsForRed){
         if(oddsForRed <= -1000){
             return 10.0;
         } else if (oddsForRed <= -800) {
