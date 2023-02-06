@@ -6,7 +6,7 @@ public interface FighterInterface {
         System.out.println("enter a fighter name?: ");
         nameOfFighter = scanner.nextLine();
         if (nameOfFighter.isEmpty() || nameOfFighter.matches("[0-9]+") || nameOfFighter.matches(".*\\d+.*") || nameOfFighter.matches(".*[^a-zA-Z0-9 ].*")) {
-            return "wrong";
+            return askForName(scanner);
         }
         return nameOfFighter;
     }
