@@ -1,6 +1,6 @@
-package com.whoWins.fighter.promotionInterface;
+package com.whoWins;
 import java.util.Scanner;
-public interface FighterInterface {
+public interface IFighterInterface {
     static String askForName(Scanner scanner) {
         String nameOfFighter;
         System.out.println("enter a fighter name?: ");

@@ -1,5 +1,4 @@
-package com.whoWins.fighter.promotionInterface;
-import com.whoWins.fighter.promotionInterface.Fighter;
+package com.whoWins;
 
 import java.io.Reader;
 

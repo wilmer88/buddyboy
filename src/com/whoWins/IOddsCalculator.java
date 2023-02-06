@@ -1,6 +1,6 @@
-package com.whoWins.fighter.promotionInterface;
+package com.whoWins;
 
-public interface OddsCalculator {
+public interface IOddsCalculator {
  public static Double oddsCalculator(Double oddsForRed){
         if(oddsForRed <= -1000){
             return 10.0;

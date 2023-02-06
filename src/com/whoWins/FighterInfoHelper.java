@@ -1,4 +1,4 @@
-package com.whoWins.fighter.promotionInterface;//import com.whoWins.fighter.promotionInterface.OddsCalculator;
+package com.whoWins;//import com.whoWins.fighter.promotionInterface.OddsCalculator;
 //import com.whoWins.fighter.NameExporter;
 
 import java.io.Reader;
@@ -7,6 +7,7 @@ import java.io.StringReader;
 public class FighterInfoHelper {
     public void test() throws Exception {
         String stringName = "{ \"name\":\"wilmer\"}";
+
         Reader in = new StringReader(stringName);
         Fighter daddyPop = new Fighter(new NameImporter(in));
 

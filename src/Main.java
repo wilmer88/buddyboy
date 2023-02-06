@@ -1,16 +1,17 @@
-import com.whoWins.fighter.promotionInterface.Questions;
+import com.whoWins.Questions;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Questions questions = new Questions();
         String name;
      name =  questions.askNameMethod();
                 System.out.println(name);
-    }}
+    }
 
-
-
-
-
+}
 
 //        PromptAboutFighter cholo = new PromptAboutFighter();
 //      String fighterName = cholo.askName();

@@ -1,6 +1,6 @@
-package com.whoWins.fighter.promotionInterface;
+package com.whoWins;
 
-public interface Predictor {
+public interface IPredictor {
     public default String predict(Integer redCornerOddsPoints, Integer redCornerRecordPoints,
                                   Integer blueCornerOddsPoints, Integer blueCornerRecordPoints){
         Integer redTotalPoints = redCornerOddsPoints + redCornerRecordPoints;
@@ -18,7 +18,7 @@ public interface Predictor {
         else return "something went wrong";
     }
 
-    abstract class PromptAboutFighter implements FighterInterface{
+    abstract class PromptAboutFighter implements IFighterInterface {
         public static String askForName() {
             return null;
         }

@@ -1,6 +1,4 @@
-package com.whoWins.fighter.promotionInterface;
-
-import com.whoWins.fighter.promotionInterface.Fighter;
+package com.whoWins;
 
 class NameExporter implements Fighter.ExporterCorner {
     private String fighterName;

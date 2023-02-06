@@ -1,9 +1,8 @@
-package com.whoWins.fighter.promotionInterface;
+package com.whoWins;
 
 public class Fighter {
     private String fighterName;
     public Fighter(String fighterName){ this.fighterName = fighterName;}
-
     interface ImporterCorner { String fetchFighterName();}
     interface ExporterCorner { void storeFighterName(String fighterName);}
     public Fighter(ImporterCorner source){
