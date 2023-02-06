@@ -1,4 +1,6 @@
-package com.whoWins.fighter;
+package com.whoWins.fighter.promotionInterface;
+import com.whoWins.fighter.promotionInterface.Fighter;
+
 import java.io.Reader;
 
 public  class NameImporter implements Fighter.ImporterCorner {

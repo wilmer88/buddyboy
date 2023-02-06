@@ -1,4 +1,4 @@
-package com.whoWins.fighter;
+package com.whoWins.fighter.promotionInterface;
 
 public class Fighter {
     private String fighterName;

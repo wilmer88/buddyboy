@@ -1,4 +1,4 @@
-package com.whoWins.promotionInterface;
+package com.whoWins.fighter.promotionInterface;
 
 public interface WinLossCalculator {
   public static Integer calculateRedWinLossPoints(Integer redSideWins, Integer redSideLoss){

@@ -1,4 +1,4 @@
-package com.whoWins.promotionInterface;
+package com.whoWins.fighter.promotionInterface;
 
 public interface OddsCalculator {
  public static Double oddsCalculator(Double oddsForRed){

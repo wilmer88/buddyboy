@@ -1,19 +1,11 @@
-//import java.util.Scanner;
-
-//import com.whoWins.questionsAndAnswers.PromptAboutFighter;
-
-import com.whoWins.promotionInterface.FighterInterface;
-import com.whoWins.questionsAndAnswers.PromptAboutFighter;
-
-import java.util.Locale;
-import java.util.Scanner;
-
+import com.whoWins.fighter.promotionInterface.Questions;
 public class Main {
     public static void main(String[] args) {
-//        PromptAboutFighter promptAboutFighter =  PromptAboutFighter();
-     String name;
-        name = PromptAboutFighter.askForName();
-        System.out.println(name);
+        Questions questions = new Questions();
+        String name;
+     name =  questions.askNameMethod();
+                System.out.println(name);
+    }}
 
 
 
@@ -58,7 +50,7 @@ public class Main {
 //            case "wilmer":
 //                System.out.println("great you doing it "+ name);
 //        }
-//        com.whoWins.fighter.FighterInfoHelper infoHelper = new com.whoWins.fighter.FighterInfoHelper();
+//        com.whoWins.fighter.promotionInterface.FighterInfoHelper infoHelper = new com.whoWins.fighter.promotionInterface.FighterInfoHelper();
 //        infoHelper.helperOne();
 //
 
@@ -66,7 +58,7 @@ public class Main {
 //      String askedName =  c.name = c.askForName();
 //       double askedOdds = c.odds = c.askOdds(askedName);
 
-}}
+//}}
 
 //Integer oddsForRedSide = Integer.parseInt(redSideOdds);
 //Integer RedSideWins = Integer.parseInt(redSideWins);

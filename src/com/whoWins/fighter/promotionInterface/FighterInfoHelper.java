@@ -1,4 +1,6 @@
-package com.whoWins.fighter;//import com.whoWins.promotionInterface.OddsCalculator;
+package com.whoWins.fighter.promotionInterface;//import com.whoWins.fighter.promotionInterface.OddsCalculator;
+//import com.whoWins.fighter.NameExporter;
+
 import java.io.Reader;
 import java.io.StringReader;
 
