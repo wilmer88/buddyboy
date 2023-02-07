@@ -1,3 +1,4 @@
+import com.whoWins.PromotionEventsAndBouts;
 import com.whoWins.Questions;
 
 import java.util.ArrayList;
@@ -5,10 +6,14 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Questions questions = new Questions();
-        String name;
-     name =  questions.askNameMethod();
-                System.out.println(name);
+
+        PromotionEventsAndBouts.main();
+
+
+//        Questions questions = new Questions();
+//        String name;
+//     name =  questions.askNameMethod();
+//                System.out.println(name);
     }
 
 }
